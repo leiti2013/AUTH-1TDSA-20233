@@ -85,10 +85,10 @@ public class Main {
             var senha = JOptionPane.showInputDialog("Digite sua senha: ");
 
             if (Objects.equals(login, leol.getEmail()) && Objects.equals(senha, leol.getPassword())) {
-                System.out.println("Você logou!!");
+                System.out.println("Login realizado com sucesso");
                 sucesso = 1;
             } else {
-                System.out.println("Email ou senha incorretos Falha no login!");
+                System.out.println("Dados incorretos");
                 sucesso = 0;
             }
 

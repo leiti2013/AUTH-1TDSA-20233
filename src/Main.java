@@ -102,7 +102,7 @@ public class Main {
         System.out.println("Gerente: " + gerente);
         System.out.println("Login: " + leol);
         System.out.println("Sistema: " + mercado);
-        System.out.println("Role: " + operaCaixa);
+        System.out.println("Role:  " + operaCaixa);
 
     }
 

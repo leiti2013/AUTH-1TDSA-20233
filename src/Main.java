@@ -95,7 +95,7 @@ public class Main {
 
         }while (sucesso != 1);
 
-        System.out.println("Pessoa física: " + leo);
+        System.out.println("Pessoa Física: " + leo);
         System.out.println("Filho da Pessoa física: " + brabo);
         System.out.println("Pessoa Jurídica: " + holding);
         System.out.println("Login: " + leol);

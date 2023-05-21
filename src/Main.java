@@ -69,7 +69,8 @@ public class Main {
         PessoaJuridica holding = novaPessoaJuridica(2L,"Holding",LocalDate.of(2021,3,15),"111111");
         User leol = novoUsuario(3L,"leo@hotmail.com","senha",leo);
         Profile gerente = novoProfile(4L,"leo");
-        Sistema mercado = novoSistema(5L,"fate","fg");
+        Sistema mercado = novoSistema(5L,"Mercado","mc");
+        Role operaCaixa = novaRole(6L, "Parducci", "Vai operar o caixa", mercado);
 
         PessoaFisica brabo = novaPessoa(732L,"leo filho", LocalDate.of(2023,8,15),"2342345");
 
@@ -81,18 +82,28 @@ public class Main {
 
         do {
 
-            var login = JOptionPane.showInputDialog("Digite seu email: ");
-            var senha = JOptionPane.showInputDialog("Digite sua senha: ");
+            var login = JOptionPane.showInputDialog("Email: ");
+            var senha = JOptionPane.showInputDialog("Senha: ");
 
             if (Objects.equals(login, leol.getEmail()) && Objects.equals(senha, leol.getPassword())) {
-                System.out.println("Você logou!!");
+                System.out.println("Login efetuado com sucesso.");
                 sucesso = 1;
             } else {
-                System.out.println("Email ou senha incorretos Falha no login!");
+                System.out.println("Email ou senha incorretos Falha no login.");
                 sucesso = 0;
             }
 
         }while (sucesso != 1);
+
+        System.out.println("Pessoa física: " + leo);
+        System.out.println("Filho da Pessoa física: " + brabo);
+        System.out.println("Pessoa Jurídica: " + holding);
+        System.out.println("Login: " + leol);
+        System.out.println("Gerente: " + gerente);
+        System.out.println("Login: " + leol);
+        System.out.println("Sistema: " + mercado);
+        System.out.println("Role: " + operaCaixa);
+
     }
 
 
